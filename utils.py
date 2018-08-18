@@ -176,11 +176,11 @@ class GDriveCheckpointer(keras.callbacks.Callback):
             self.best_epoch = copy.deepcopy(d)
             fn = self.filepath_fn(d)
             if fn is not None and fn:
-                if self.best_filename:
-                    #os.remove(self.best_filename)
-                    #old_file = self.saver.find_items(self.best_filename)[0]
-                    #print('Removing old cloud file %s' % old_file.name)
-                    #self.saver.delete_file(old_file)
+                #if self.best_filename:
+                #    os.remove(self.best_filename)
+                #    old_file = self.saver.find_items(self.best_filename)[0]
+                #    print('Removing old cloud file %s' % old_file.name)
+                #    self.saver.delete_file(old_file)
                 self.best_filename = fn
                 self._save_checkpoint()
             else:
