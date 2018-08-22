@@ -1,8 +1,8 @@
 _res = get_ipython().run_cell("""
-!pip install tqdm
-!pip install keras
+!pip install -q tqdm
+!pip install -q keras
 !rm tboard.py
-!wget https://raw.githubusercontent.com/mixuala/colab_utils/master/tboard.py
+!wget -q https://raw.githubusercontent.com/mixuala/colab_utils/master/tboard.py
 !rm -rf log/
 """)
 
